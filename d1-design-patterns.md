@@ -28,3 +28,11 @@ Kodun örneği ve desenidir. Çözümden önce problemi ifade eder. **Christophe
 - Bahsedilen bu problemlerin çözümlerinde, sık karşılaşılan sorumluluklar ile bunların yerine getiren nesne rolleri ortaya konur.
 - Tasarım kalıpları ile elde edilen nesne rolleri, zihnimizde bir rol soyutlaması ve kategorizasyon oluşturur.
 - Bu roller, tasarım kalıpları kullanılmasa bile genel tasarımın bir parçasını olusturur.
+
+### Tasarım Kalıplarının Yapısı
+Bir tasarım kalbının temelde 4 bileşeni vardır:
+
+ 1. İsim ki o kalıbı, problemi ve çözümüyle ayırt etmemizi sağlar.
+ 2. Problem ki hangi bağlamda nasıl ortaya çıktığını ifade eder.
+ 3. Çözüm kü parçaları ve aralarındaki ilişkileri ifade eder.
+ 4. Sonuçlar ki kazanılan ve kaybedilenleri ifade eder.
