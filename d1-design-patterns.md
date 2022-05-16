@@ -25,3 +25,6 @@ Kodun örneği ve desenidir. Çözümden önce problemi ifade eder. **Christophe
 - Birden fazla nesneyi nasıl yönetiriz?
 - Aynı işi birden fazla nesneye nasıl uygularız?
 ### Nesne Rolleri
+- Bahsedilen bu problemlerin çözümlerinde, sık karşılaşılan sorumluluklar ile bunların yerine getiren nesne rolleri ortaya konur.
+- Tasarım kalıpları ile elde edilen nesne rolleri, zihnimizde bir rol soyutlaması ve kategorizasyon oluşturur.
+- Bu roller, tasarım kalıpları kullanılmasa bile genel tasarımın bir parçasını olusturur.
