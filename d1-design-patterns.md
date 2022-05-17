@@ -36,3 +36,10 @@ Bir tasarım kalbının temelde 4 bileşeni vardır:
  2. Problem ki hangi bağlamda nasıl ortaya çıktığını ifade eder.
  3. Çözüm kü parçaları ve aralarındaki ilişkileri ifade eder.
  4. Sonuçlar ki kazanılan ve kaybedilenleri ifade eder.
+
+#### Tasarım Kalıpları Bizi Korur
+- **Tasarım Kalıpları** çoğu defa bizi, normalde nesne-merkezli programlama dili kullanmanıza rağmen prosedürel anlayışla yazılım geliştirmeye düşmekten kaçınmamımızı sağlar.
+- Bu yüzden normalde tek bir method altında pek çok "if" ile yaptığımız functional decomposition yapıları, nesne seviyesinde nasıl ifade edeceğimizi bize öğretir.
+- Tekerleği yeniden keşfetmemek, var olan ispatlanmış çözümleri kullanmak.
+- Formal ve yaygın bir dil oluşturmak.
+- Tasarıma uygun, yüksek soyutlama gücü kazandırmak, detaylardan sıyrılıp daha yüksek hedefler cinsinden düşünmek.
