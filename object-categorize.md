@@ -98,4 +98,43 @@ En dışarıda da Frameworkleri, driver ve device ları kullanıyoruz. En core d
 	- Sıra dışı durumlar
 	- Entity için validator, converter, comprator, sorter, formatter vb. nesneler
 - Tekrar kullanımı bener iş alanlarında yüksek nesnelerdir.
- 
+ #### Mimari Alan
+- Mimari stil-kalıp, tasarım kalıbı, boundary, teknoloji vb. nesneler,
+	- MVC, DAO vb mimari stil, kalıp ve altyapı neseneler,
+	- Ön bellek (cache), thread pool, transaction vb.
+	- IU/GUI mekanizmaları, web servis vb. iletişim nesneleri
+	- Spring, EJB, JPA, EntityFramework, Django vb. teknolojik nesneler
+- Tekrar kullanımı iş alanlarından ve uygulamadan bağımsızdır ve yüksektir. 
+#### Temel Alan
+- En temel nesneleri içerir:
+	- Programlama dili tipleri: Primitives ve wrapper nesneleri, String, Date, Time, Thread, koduna müdahele edilmeyecek sınıflar.
+	- Sık kullanılan kütüphane nesneleri,
+	- Oluşturulan diğer temel nesneler: Better String, Complex Number, HttpWrapper, vs.
+- Tekrar kullanımı en yüksek olan nesnelerdir.
+### Yazılım Alanları İlişkileri 
+- Nesneler, alanlarına has olmalıdırlar, birden dazla olan tek bir nesne temsil edilmemeli
+- Her alanın nesneleri, aynı alandaki diğer nesneleri kullanabilir
+- Farklı alanlardan olan nesneler, birbirlerini ancak bağımlılık yönünde kullanabilirler, bağımlılık yönüne ters kullanımdan kaçınmalıdır. 
+### Mixed - Role Cohesion
+- Aynı alan içerisinde olduğu halde farklı rollere sahip nesnelerin özelliklerinin tek bir nesnede toplandığı durumdur.
+- Örnekleri çok sık görülür çünkü diğer ikisi kadar açık değildir
+- Örnekleri çok sık, özellikle entity nesnelerinde görülür
+- Problemi tarif etmek diğer ikisine göre daha zordur. Çünkü sınıf tek bir domainde ve o domainin içindeki farklı rolleri bir araya getirmiş. Burada role kavramı bize daha fazla detay veriyor.
+#### Ornek
+	
+
+    public class Person{
+    String name
+    ...
+    int numberOfDogs;
+    int numberOfCC;
+    }
+    
+  - Örneğin erişim kolaylığı olsun diye Person nesnesi üzerinde *numberOfDogs* vb. alanlar tanımlamak
+	  - Tekrar kullanımı önler
+  - Farklı durumlara(state) sahip bir nesnenin durumlarının hepsi aynı nesnede yönetmek
+	  - Bu mixed-instance içinde bir örnektir
+    
+
+	
+
